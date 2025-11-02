@@ -1,10 +1,10 @@
 `timescale 1ns/1ps
-module and_tb;//1st-module declaration
+module xnor_tb;//1st-module declaration
   //2nd-Signal declaration
   reg a,b;
-  wire c;
+  wire y;
   //3rd-DUT instantiation
-  and_g DUT(.a(a), .b(b), .c(c));
+  xnor_g DUT(.a(a), .b(b), .y(y));
 // 4th- initiazle testbench variable
 initial begin
     a=0; b=0;
@@ -20,12 +20,12 @@ end
 always @(a or b) begin
     #1;
     
-    $display(" | A = %b | B = %b | C = %b |",a,b,c);
+    $display(" | A = %b | B = %b | Y = %b |",a,b,y);
     
 end
 initial begin
-    $dumpfile ("and_dump.vcd");
-    $dumpvars(0,and_tb);
+    $dumpfile ("xnor_dump.vcd");
+    $dumpvars(0,xnor_tb);
 end
 endmodule
  
