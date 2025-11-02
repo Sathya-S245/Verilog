@@ -12,7 +12,7 @@ initial begin
 end
 always @(a or b) begin
     #1
-    $display(" A = %b | B = %b | C = %b |");
+    $display(" A = %b | B = %b | C = %b |",a,b,c);
 end
 initial begin
     $dumpfile ("dump.vcd");
