@@ -1,5 +1,5 @@
 $date
-	Sun Nov 02 18:10:02 2025
+	Sun Nov 02 18:43:13 2025
 $end
 $version
 	Icarus Verilog
@@ -7,14 +7,14 @@ $end
 $timescale
 	1ps
 $end
-$scope module or_tb $end
+$scope module and_tb $end
 $var wire 1 ! c $end
 $var reg 1 " a $end
 $var reg 1 # b $end
 $scope module DUT $end
 $var wire 1 " a $end
 $var wire 1 # b $end
-$var reg 1 ! c $end
+$var wire 1 ! c $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -28,11 +28,11 @@ $dumpvars
 0!
 $end
 #10000
-1!
 1#
 #20000
 0#
 1"
 #30000
+1!
 1#
 #40000

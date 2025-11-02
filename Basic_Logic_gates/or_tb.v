@@ -15,7 +15,7 @@ always @(a or b) begin
     $display(" A = %b | B = %b | C = %b |",a,b,c);
 end
 initial begin
-    $dumpfile ("dump.vcd");
+    $dumpfile ("or_dump.vcd");
     $dumpvars(0,or_tb);
 end
 endmodule
